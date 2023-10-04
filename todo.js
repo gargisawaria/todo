@@ -64,16 +64,17 @@ let resetform=()=>{
 }
 
 let deleteTask=(e)=>{
-    e.parentNode.parentNode.remove();  
-    data.splice(e.parentNode.parentNode.id,1);
-    localStorage.setItem('data',JSON.stringify(data));
+    e.parentElement.parentElement.remove();
+    data.splice(e.parentElement.parentElement.id, 1);
+    localStorage.setItem("data",JSON.stringify(data));
 }
 let editTask=(e)=>{
    let selectedtask=e.parentElement.parentElement;
+
     textInput.value=selectedtask.children[0].innerHTML;
     dateInput.value=selectedtask.children[1].innerHTML;
     textarea.value=selectedtask.children[2].innerHTML;
-    selectedtask.remove();
+   deleteTask(e);
 }
 (()=>{
     data=JSON.parse(localStorage.getItem("data"))|| []
