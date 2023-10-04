@@ -1,0 +1,48 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app{
+    width: 300px;
+    height: 500px;
+    border:5px solid black;
+    border-radius: 7px;
+    padding: 3%;
+    background-color: white;
+    overflow-y: scroll;
+} 
+#addNew{
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.fa-plus{
+    background-color: rgb(234, 212, 184);
+    padding:3px ;
+    border-radius: 3px;
+}
+#task div{
+    background-color:bisque ;
+    border: 3px solid  rgb(234, 212, 184) ;
+    margin: 3% 0%;
+    padding: 6px;
+    border-radius: 6px;
+    display: grid;
+    gap: 4px;
+}
+.options{
+    justify-self: center;
+    display: flex;
+    gap:20px;
+}
+.options i{
+    cursor: pointer;
+}
