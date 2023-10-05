@@ -69,13 +69,14 @@ let deleteTask=(e)=>{
     localStorage.setItem("data",JSON.stringify(data));
 }
 let editTask=(e)=>{
-   let selectedtask=e.parentElement.parentElement;
+   let selectedtask=e.parentElement.parentElement.parentElement;
 
     textInput.value=selectedtask.children[0].innerHTML;
     dateInput.value=selectedtask.children[1].innerHTML;
     textarea.value=selectedtask.children[2].innerHTML;
    deleteTask(e);
 }
+
 
 (()=>{
     data=JSON.parse(localStorage.getItem("data"))|| []
