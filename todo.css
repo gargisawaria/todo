@@ -26,7 +26,6 @@ body{
     cursor: pointer;
     border-radius: 4px;
     border: 3px solid  rgb(234, 212, 184) ;
-    box-shadow: 0px 0px 5px 0px rgba(42, 39, 41, 0.75);
 }
 .fa-plus{
     background-color: rgb(234, 212, 184);
@@ -44,7 +43,6 @@ body{
     gap: 4px;
     width: 100%;
     word-wrap: break-word ;
-    box-shadow: 0px 0px 5px 0px rgba(42, 39, 41, 0.75);
 }
 .options{
     
