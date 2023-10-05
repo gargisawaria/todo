@@ -64,8 +64,8 @@ let resetform=()=>{
 }
 
 let deleteTask=(e)=>{
-    e.parentElement.parentElement.remove();
-    data.splice(e.parentElement.parentElement.id, 1);
+    e.parentElement.parentElement.parentElement.remove();
+    data.splice(e.parentElement.parentElement.parentElement.id, 1);
     localStorage.setItem("data",JSON.stringify(data));
 }
 let editTask=(e)=>{
