@@ -47,8 +47,8 @@ let createTask=()=>{
         <span class="small ">${x.date}</span>
         <p>${x.description}</p>
         <span class="options">
-            <i class="fas fa-edit" onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form"></i>
-            <i class="fas fa-trash" onClick="deleteTask(this)"></i>
+           <abbr title="Edit Task"> <i class="fas fa-edit" onClick="editTask(this)" data-bs-toggle="modal" data-bs-target="#form"></i></abbr>
+           <abbr title="Delete Task"> <i class="fas fa-trash" onClick="deleteTask(this)"></i></abbr>
         </span>
         </div>
         `
@@ -76,6 +76,7 @@ let editTask=(e)=>{
     textarea.value=selectedtask.children[2].innerHTML;
    deleteTask(e);
 }
+
 (()=>{
     data=JSON.parse(localStorage.getItem("data"))|| []
     createTask();
