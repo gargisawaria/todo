@@ -26,12 +26,11 @@
 
 
     <!-- Modal -->
-    <form class="modal fade my-4" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form class="modal fade my-4" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Task</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p> Task Title</p>
@@ -44,8 +43,7 @@
             <textarea name="" id="textarea" cols="30" rows="5" class="form-control"></textarea>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" id="add" class="btn btn-primary">Add</button>
+            <button type="submit" id="add" class="btn btn-primary">Save</button>
           </div>
         </div>
       </div>

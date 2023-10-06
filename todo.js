@@ -74,7 +74,6 @@ let editTask=(e)=>{
     textInput.value=selectedtask.children[0].innerHTML;
     dateInput.value=selectedtask.children[1].innerHTML;
     textarea.value=selectedtask.children[2].innerHTML;
-    alert("click on add button to save edited and non edited data");
    deleteTask(e);
 }
 
