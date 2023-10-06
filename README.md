@@ -1,2 +1,2 @@
 # todo
-![image](https://github.com/gargisawaria/todo/assets/96246464/b1a0dc01-7355-464e-9bbc-a9b748a0eda5)
+![image](https://github.com/gargisawaria/todo/assets/96246464/f98df151-b137-446a-83e1-716a137e475e)
