@@ -4,6 +4,7 @@ let textInput= document.getElementById('textInput');
 let dateInput= document.getElementById('dateInput');
 let textarea= document.getElementById('textarea');
 let add= document.getElementById('add');
+
 form.addEventListener('submit', function(e){
     e.preventDefault();
     formvalidation();
@@ -12,7 +13,6 @@ form.addEventListener('submit', function(e){
 let formvalidation=()=>{
     
     if(textInput.value===""){
-        alert("Please enter a task");
     }
     else{
         acceptData();
